@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 1. inventory_code 필수입력 2. request_interval 미입력시 default 10초 -->
+    <kr.adballoon.ABBannerView
+        android:id="@+id/abview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        inventory_code="freebok-NSU3QzElN0M2NDAlN0MxMDA="
+        request_interval="10000"/>
+</LinearLayout>
