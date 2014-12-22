@@ -72,9 +72,8 @@ h1 {
 }
 
 h2 {
-  padding-bottom: 10px;
+  
   font-size: 32px;
-  background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 h3 {
@@ -279,84 +278,98 @@ Full-Width Styles
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  background: url('../images/blacktocat.png') #fbb713 no-repeat 95% 50%;
   font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
 
+/* 상단라인 */
+#topline{width:100%; height:6px; margin:0; padding:0;}
+.color_red{width:35%; height:6px; float:left; margin:0; padding:0; background-color:#ff3645;}
+.color_yellow{width:10%; height:6px; float:left; margin:0; padding:0; background-color:#fbb713;}
+.color_green{width:10%; height:6px; float:left; margin:0; padding:0; background-color:#a8ce39;}
+.color_blue{width:10%; height:6px; float:left; margin:0; padding:0; background-color:#3dacff;}
+.color_purple{width:34.9%; height:6px; float:left; margin:0; padding:0; background-color:#b893ff;}
+
 #header_wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
+  /*background:#FFF;*/
+  background-image:url(../images/main_contents01_bg.png);
+  height:280px;
 }
 
+
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 50px 10px 10px 10px;
+
+}
+
+#header_wrap img{
+	border:none;
+	box-shadow:none;
+	margin:0;
+		
 }
 
 #project_title {
-  margin: 0;
-  color: #fff;
-  font-size: 42px;
+  margin:0;
+  color: #555;
+  font-size: 36px;
   font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
+
 }
 
 #project_tagline {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-  background: none;
-  text-shadow: #111 0px 0px 10px;
+  margin:0;
+  color: #888;
+  font-size: 20px;
+  font-weight: 500;
+ 
 }
 
 #downloads {
   position: absolute;
   width: 210px;
   z-index: 10;
-  bottom: -40px;
+  top:180px;
   right: 0;
   height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
+  
 }
 
 .zip_download_link {
   display: block;
   float: right;
+  padding:0 0 0 10px;
   width: 90px;
   height:70px;
   text-indent: -5000px;
   overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom left;
+  background: url('../images/zip.png') no-repeat;
 }
 
 .tar_download_link {
   display: block;
   float: right;
+  padding:0 10px 0 0px;
   width: 90px;
   height:70px;
   text-indent: -5000px;
   overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom right;
-  margin-left: 10px;
+  background: url('../images/tar.png') no-repeat;
+ 
 }
-
 .zip_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top left;
+  background: url('../images/zip_hover.png') no-repeat ;
 }
 
 .tar_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top right;
+  background: url('../images/tar_hover.png') no-repeat ;
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
-  border-top: 1px solid #111;
+  background: #f9f9f9;
+  border-top: 1px solid #dddddd;
   border-bottom: 1px solid #111;
 }
 
