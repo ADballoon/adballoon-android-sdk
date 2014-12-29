@@ -23,7 +23,41 @@
     <!-- 네트워크 상태 확인을 위한 permission -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 ```
-* Step 4 : 프로젝트에 코드 적용
+* Step 4 : google_play_service_lib 추가
+
+	2014년 8월 1일부터 Play 스토어에 업로드되는 모든 업데이트 및 새 앱은 광고가 목적인 경우 다른 기기 식별자 대신 광고 ID를 사용해야 한다. [Android 광고 ID 이용 약관](https://play.google.com/about/developer-content-policy.html#ADID)
+	
+	ADballoon의 경우 사용자 통계를 위해 기기 식별자를 사용하는데, 이때 Google에서 약관으로 명시한 Android 광고 ID를 사용한다.
+	
+	이에 따라, 광고 ID를 얻기 위해 google_play_services_lib를 추가하고 설정이 필요하며 추가하는 방법은 아래와 같다.
+	
+	1) Google Play Services Library Project Import
+	가지고있는 Android SDK에 포함되어있는 Library를 Import한다.
+	
+	File -> New -> Android Project from Existing Code -> Root Directory(경로 설정) -> Finish
+	
+	Library경로는 아래와 같다.
+	
+	Android SDK/extras/google/google_play_services/libproject/google-play-services_lib/
+	
+	2) Project에 Library 지정
+	개발중인 프로젝트에 추가한 Google Play Services Library를 지정해 주어야 한다.
+	
+	Project -> Properties -> Android -> Library(Add) -> google_play_services_lib 선택
+	
+	3) AndroidManifest.xml에 meta-data 태그 추가
+	AndroidManifest.xml에 meta-data 태그를 추가해 주어야 한다.
+	
+	위치는 AndroidManifest.xml <application> </application> 안에 포함해야 하며, 태그 형식은 아래와 같다.
+	```
+	<meta-data android:name="com.google.android.gms.version"
+		android:value="@integer/google_play_services_version" />
+	```
+	
+	보다 자세한 사항은 아래 사이트를 참조한다
+	
+	[Setting Up Google Play Services](https://developer.android.com/google/play-services/setup.html?hl=ko)
+* Step 5 : 프로젝트에 코드 적용
 
 ### ADBalloon SDK 에러코드 구성
 
