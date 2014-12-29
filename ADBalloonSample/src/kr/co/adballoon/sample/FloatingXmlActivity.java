@@ -4,9 +4,9 @@ import kr.adballoon.ABFloatingView;
 import kr.adballoon.ABView.OnABListener;
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 
-public class FloatingXmlActivity extends Activity {
-
+public class FloatingXmlActivity extends Activity {	
 	// 플로팅배너광고 객체 생성
 	private ABFloatingView mABFloatingView; 
 	
@@ -66,9 +66,9 @@ public class FloatingXmlActivity extends Activity {
 			}
 			
 			@Override
-			public void onAdFailedToLoad(int arg0) {
+			public void onAdFailedToLoad(int error) {
 				// 광고수신 실패 알림
-				
+				Log.i("ADballoonLog", "onAdFailedToLoad, errorCode = "+error);
 			}
 			
 			@Override

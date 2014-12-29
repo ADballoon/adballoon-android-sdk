@@ -9,7 +9,7 @@
         android:id="@+id/abview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        inventory_code="freebok-NSU3QzIlN0M2NDAlN0M5NjA="
+        inventory_code="test_bluerain1-MSU3QzMlN0MxMDAlN0MxMDA="
         request_interval="10000"
         button_visible="true"/>
 </LinearLayout>

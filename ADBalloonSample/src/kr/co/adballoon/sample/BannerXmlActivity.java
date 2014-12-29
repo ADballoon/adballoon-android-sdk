@@ -4,6 +4,7 @@ import kr.adballoon.ABBannerView;
 import kr.adballoon.ABView.OnABListener;
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 
 public class BannerXmlActivity extends Activity {
 
@@ -62,9 +63,9 @@ public class BannerXmlActivity extends Activity {
 			}
 			
 			@Override
-			public void onAdFailedToLoad(int arg0) {
+			public void onAdFailedToLoad(int error) {
 				// 광고수신 실패 알림
-				
+				Log.i("ADballoonLog", "onAdFailedToLoad, errorCode = "+error);
 			}
 			
 			@Override

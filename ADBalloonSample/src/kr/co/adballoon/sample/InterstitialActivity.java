@@ -4,6 +4,7 @@ import kr.adballoon.ABInterstitialController;
 import kr.adballoon.ABInterstitialController.OnABInterstitialListener;
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 
 public class InterstitialActivity extends Activity {
 
@@ -29,7 +30,7 @@ public class InterstitialActivity extends Activity {
 	    // 전면광고 객체 할당
 	    mABInterstitial = new ABInterstitialController(this);
 	    // 전면광고 인벤토리 코드 설정
-	    mABInterstitial.setInventoryCode("freebok-NSU3QzIlN0M2NDAlN0M5NjA=");
+	    mABInterstitial.setInventoryCode("test_bluerain1-MSU3QzIlN0M2NDAlN0M5NjA=");
 	    // 전면광고 자동노출 설정
 	    mABInterstitial.requestAndShow(true);
 	    // 전면광고 리스너
@@ -46,9 +47,9 @@ public class InterstitialActivity extends Activity {
 			}
 			
 			@Override
-			public void onAdFailedToLoad(int errorCode) {
+			public void onAdFailedToLoad(int error) {
 				// 광고수신 실패 알림
-				
+				Log.i("ADballoonLog", "onAdFailedToLoad, errorCode = "+error);
 			}
 			
 			@Override

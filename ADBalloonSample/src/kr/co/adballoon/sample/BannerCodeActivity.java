@@ -4,6 +4,7 @@ import kr.adballoon.ABBannerView;
 import kr.adballoon.ABView.OnABListener;
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.FrameLayout;
 
@@ -55,7 +56,7 @@ public class BannerCodeActivity extends Activity {
 	    // 띠배너광고 LayoutParams 설정
 	    mABBannerView.setLayoutParams(new FrameLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 	    // 띠배너광고 InventoryCode 설정
-	    mABBannerView.setInventoryCode("freebok-NSU3QzElN0M2NDAlN0MxMDA=");
+	    mABBannerView.setInventoryCode("test_bluerain1-MSU3QzElN0M2NDAlN0MxMDA=");
 	    // 띠배너광고 재수신 시간 설정
 	    mABBannerView.setRequestInterval(10000);
 	    // 띠배너광고 리스너
@@ -73,9 +74,9 @@ public class BannerCodeActivity extends Activity {
 			}
 			
 			@Override
-			public void onAdFailedToLoad(int arg0) {
+			public void onAdFailedToLoad(int error) {
 				// 광고수신 실패 알림
-				
+				Log.i("ADballoonLog", "onAdFailedToLoad, errorCode = "+error);
 			}
 			
 			@Override
