@@ -66,7 +66,7 @@
 ###### ABError.ERROR_CODE_ERROR_IO : 서버와의 연결이 원활하지 않을 경우 발생
 ###### ABError.ERROR_CODE_ERROR_NO_DATA : 광고 데이터가 없을 경우 발생
 ###### ABError.ERROR_CODE_NETWORK_ERROR : 단말기의 네트워크 연결이 되어있지 않을때 발생
-###### ABError.ERROR_CODE_FAILE_TYPE : 발급 받은 InventoryCode와 생성한 객체의 타입이 다를 경우 발생
+###### ABError.ERROR_CODE_FAIL_TYPE : 발급 받은 InventoryCode와 생성한 객체의 타입이 다를 경우 발생
 ###### ABError.ERROR_CODE_ERROR_ETC : 그외의 상황으로 인해 발생
 
 ### onResume(), onPause(), onDestroy() 구성
