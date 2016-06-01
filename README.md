@@ -202,7 +202,7 @@ mABBannerView.requestAD();
     android:id="@+id/abview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    inventory_code="freebok-NSU3QzIlN0M2NDAlN0M5NjA="
+    inventory_code="abs-NSU3QzIlN0M2NDAlN0M5NjA="
     request_interval="10000"
     button_visible="true"/>
 ```
@@ -251,7 +251,7 @@ mABFloatingView = new ABFloatingView(this);
 // 띠배너광고 LayoutParams 설정
 mABFloatingView.setLayoutParams(new FrameLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 // 띠배너광고 InventoryCode 설정
-mABFloatingView.setInventoryCode("freebok-NSU3QzElN0M2NDAlN0MxMDA=");
+mABFloatingView.setInventoryCode("abs-NSU3QzElN0M2NDAlN0MxMDA=");
 // 띠배너광고 재수신 시간 설정
 mABFloatingView.setRequestInterval(10000);
 // 띠배너광고 리스너
@@ -294,7 +294,7 @@ private ABInterstitialController mABInterstitial;
 // 전면광고 객체 할당
 mABInterstitial = new ABInterstitialController(this);
 // 전면광고 인벤토리 코드 설정
-mABInterstitial.setInventoryCode("freebok-NSU3QzIlN0M2NDAlN0M5NjA=");
+mABInterstitial.setInventoryCode("abs-NSU3QzIlN0M2NDAlN0M5NjA=");
 // 전면광고 자동노출 설정
 mABInterstitial.requestAndShow(true);
 // 전면광고 리스너
